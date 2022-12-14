@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f5f2f0;
+    height: 100vh;
+    width: 100%;
+}
+
+.navbar {
+    padding: 60px 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.mobile-nav-btn-container {
+    display: none;
+}
+.mobile-nav-btn {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0 !important;
+}
+.links-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+
+}
+.line {
+    border-bottom: 1px solid;
+    width: 500px;
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+}
+
+.hero-img {
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 40px;
+    border: none;
+}
+
+.heading {
+    color: #f5f2f0;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #333;
+    font-size: 8rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+}
+.heading-2 {
+    color: #333;
+    font-size: 8rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    margin-top: -40px;
+    margin-left: 100px;
+}
+
+.section {
+    display: flex;
+}
+
+.section div {
+    flex: 1;
+}
+
+.btn-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-right: 60px;
+}
+
+.ml-20 {
+    margin-left: 20;
+}
+.ml-60 {
+    margin-left: 60;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.btn-box p {
+    color: #888;
+    font-size: 2rem;
+}
+
+.btn-box button {
+    width: 100%;
+}
+
+.side-nav {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.social-links {
+    margin-top: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.social-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.social-links a svg {
+    width: 24px;
+    height: 24px;
+}
+
+.scroll-arrow {
+    margin-bottom: 40px;
+}
+
+.section-details {
+    display: flex;
+}
+
+.section-details .empty, .section-details .section-info-details {
+    flex: 1;
+}
+
+.img-dancers {
+    width: 500px;
+
+}
+.section-details h3 {
+    margin: 20px 0;
+    width: 500px;
+}
+
+.section-info-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    align-items: flex-start;
+    margin-top: 60px;
+}
+
+.section-info-details .list ul {
+    color: #888;
+}
+
+.section-info-details .list ul li {
+    position: relative;
+    margin-top: 20px;
+}
+
+.section-info-details .list ul li::before {
+    /* lines */
+    content:"";
+    position: absolute;
+    left: -16px; /* adjust manually */
+    border-left: 2px solid #888;
+    height: 50px;
+    width: 2px;
+} 
+
+.section-info-details .list ul li:first-child:before {
+    top: 10px;
+} 
+.section-info-details .list ul li:last-child:before {
+    height: 10px;
+} 
+
+@media screen and (max-width: 768px) {
+    .mobile-nav-btn-container {
+        display: block;
+    }
+    .links-container {
+        display: none;
+    }
+    .navbar {
+        padding: 20px 40px;
+    }
+    .hero-img {
+        position: relative;
+        width: 100%;
+    }
+    .img-dancers {
+        width: 100%;
+    }
+    .heading, .heading-2 {
+        font-size: 5rem;
+    }
+    .section {
+        flex-direction: column;
+        padding: 0 40px;
+    }
+    .section-details {
+        flex-direction: column;
+        padding: 0 40px;
+    }
+    .section-info-details {
+        flex-direction: column;
+    }
+    .section-details h3 {
+        width: 100%;
+    }
+    .scroll-arrow {
+        display: none;
+    }
+}
